@@ -4,7 +4,7 @@ KinKeeper is a responsive friendship tracking dashboard built from a Figma-inspi
 
 ## Live Project
 
-Deployment link will be added after Vercel publish.
+[KinKeeper on Vercel](https://codex-tau-mocha.vercel.app)
 
 ## Technologies Used
 
