@@ -57,19 +57,35 @@ export default function Contact({ onCopyEmail }) {
               <span className="text-[11px] tracking-widest uppercase font-bold text-[var(--color-on-surface-variant)] mb-2">
                 DROP ME A LINE
               </span>
-              <h4 className="text-lg font-semibold text-[var(--color-on-surface)] mb-8">
-                kazisamin0173@gmail.com
-              </h4>
-              <button
-                onClick={handleCopy}
-                className="mt-auto px-6 py-2.5 rounded-full border border-[var(--color-primary)]/30
-                  text-[var(--color-primary)] text-sm font-medium
-                  hover:bg-[var(--color-primary)] hover:text-[var(--color-on-primary)]
-                  transition-all active:scale-95 flex items-center gap-2"
+              <a 
+                href="mailto:kazisamin0173@gmail.com" 
+                className="text-lg font-semibold text-[var(--color-on-surface)] hover:text-[var(--color-primary)] transition-colors mb-8 select-all break-all"
+                title="Send direct email"
               >
-                <span className="material-symbols-outlined text-sm">content_copy</span>
-                Copy Email
-              </button>
+                kazisamin0173@gmail.com
+              </a>
+              <div className="mt-auto flex flex-col sm:flex-row gap-2 w-full justify-center">
+                <a
+                  href="mailto:kazisamin0173@gmail.com"
+                  className="px-5 py-2.5 rounded-full bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20
+                    text-[var(--color-primary)] text-sm font-medium
+                    hover:bg-[var(--color-primary)] hover:text-[var(--color-on-primary)]
+                    transition-all active:scale-95 flex items-center justify-center gap-2"
+                >
+                  <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  Send Email
+                </a>
+                <button
+                  onClick={handleCopy}
+                  className="px-5 py-2.5 rounded-full border border-[var(--color-outline)]
+                    text-[var(--color-on-surface-variant)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/40
+                    text-sm font-medium
+                    transition-all active:scale-95 flex items-center justify-center gap-2"
+                >
+                  <span className="material-symbols-outlined text-sm">content_copy</span>
+                  Copy
+                </button>
+              </div>
             </div>
 
             {/* LinkedIn Card */}
