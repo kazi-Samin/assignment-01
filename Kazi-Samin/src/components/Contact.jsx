@@ -46,9 +46,12 @@ export default function Contact({ onCopyEmail }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
 
             {/* Email Card */}
-            <div className="group relative glass-card p-10 rounded-[2.5rem] flex flex-col
-              items-center text-center transition-all duration-500 hover:-translate-y-4
-              hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] overflow-hidden">
+            <a 
+              href="mailto:kazisamin0173@gmail.com"
+              className="group relative glass-card p-10 rounded-[2.5rem] flex flex-col
+                items-center text-center transition-all duration-500 hover:-translate-y-4
+                hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] overflow-hidden cursor-pointer"
+            >
               <div className="absolute inset-0 bg-[var(--color-primary)]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="w-16 h-16 rounded-2xl bg-[var(--color-surface-container)]
                 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
@@ -57,16 +60,11 @@ export default function Contact({ onCopyEmail }) {
               <span className="text-[11px] tracking-widest uppercase font-bold text-[var(--color-on-surface-variant)] mb-2">
                 DROP ME A LINE
               </span>
-              <a 
-                href="mailto:kazisamin0173@gmail.com" 
-                className="text-lg font-semibold text-[var(--color-on-surface)] hover:text-[var(--color-primary)] transition-colors mb-8 select-all break-all"
-                title="Send direct email"
-              >
+              <span className="text-lg font-semibold text-[var(--color-on-surface)] group-hover:text-[var(--color-primary)] transition-colors mb-8 select-all break-all">
                 kazisamin0173@gmail.com
-              </a>
+              </span>
               <div className="mt-auto flex flex-col sm:flex-row gap-2 w-full justify-center">
-                <a
-                  href="mailto:kazisamin0173@gmail.com"
+                <div
                   className="px-5 py-2.5 rounded-full bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20
                     text-[var(--color-primary)] text-sm font-medium
                     hover:bg-[var(--color-primary)] hover:text-[var(--color-on-primary)]
@@ -74,9 +72,13 @@ export default function Contact({ onCopyEmail }) {
                 >
                   <span className="material-symbols-outlined text-sm">open_in_new</span>
                   Send Email
-                </a>
+                </div>
                 <button
-                  onClick={handleCopy}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    handleCopy();
+                  }}
                   className="px-5 py-2.5 rounded-full border border-[var(--color-outline)]
                     text-[var(--color-on-surface-variant)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/40
                     text-sm font-medium
@@ -86,7 +88,7 @@ export default function Contact({ onCopyEmail }) {
                   Copy
                 </button>
               </div>
-            </div>
+            </a>
 
             {/* LinkedIn Card */}
             <a
