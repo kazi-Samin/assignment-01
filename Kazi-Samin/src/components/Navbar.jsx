@@ -56,15 +56,16 @@ export default function Navbar() {
         shadow-lg z-50 flex justify-between items-center px-6 md:px-8 py-3"
     >
       {/* Logo */}
-      <motion.div
+      <motion.a
+        href="#home"
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
         transition={{ type: "spring", stiffness: 400, damping: 20 }}
-        className="text-2xl font-bold tracking-tighter text-[var(--color-primary)] cursor-default"
+        className="text-2xl font-bold tracking-tighter text-[var(--color-primary)] cursor-pointer decoration-transparent block"
         style={{ fontFamily: "var(--font-playfair), Playfair Display, serif" }}
       >
         KS
-      </motion.div>
+      </motion.a>
 
       {/* Desktop Nav */}
       <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
