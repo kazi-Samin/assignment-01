@@ -54,7 +54,7 @@ const projects = [
     category: "Modern E-Learning Platform",
     description:
       "SkillSphere is a modern e-learning platform designed for students and aspiring developers to explore premium courses, manage profiles, and follow structured learning paths through a futuristic and responsive user interface.",
-    tags: ["React.js", "React Router", "Tailwind CSS", "DaisyUI", "Better Auth", "Framer Motion"],
+    tags: ["Next.js", "MongoDB", "Node.js", "React.js", "Tailwind CSS", "Better Auth", "Express.js"],
     features: [
       "Secure Authentication",
       "Trending Courses Section",
