@@ -309,7 +309,7 @@ export default function Projects() {
 
                     {/* Tech Badges */}
                     <div className="flex flex-wrap gap-2 pt-2">
-                      {proj.tags.slice(0, 5).map((tag) => (
+                      {proj.tags.map((tag) => (
                         <span
                           key={tag}
                           className="px-2.5 py-0.5 rounded-full text-[11px] font-semibold
