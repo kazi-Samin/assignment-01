@@ -298,6 +298,15 @@ export default function Projects() {
                       {proj.description}
                     </p>
 
+                    {/* Features Detail Grid (4 Points) */}
+                    <div className="border-l-2 border-[var(--color-outline-variant)]/30 pl-4 py-1 mt-4 space-y-1">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
+                        {proj.features.slice(0, 4).map((feat) => (
+                          <FeatureBadge key={feat} text={feat} />
+                        ))}
+                      </div>
+                    </div>
+
                     {/* Tech Badges */}
                     <div className="flex flex-wrap gap-2 pt-2">
                       {proj.tags.slice(0, 5).map((tag) => (
@@ -309,15 +318,6 @@ export default function Projects() {
                           {tag}
                         </span>
                       ))}
-                    </div>
-
-                    {/* Features Detail Grid (4 Points) */}
-                    <div className="border-l-2 border-[var(--color-outline-variant)]/30 pl-4 py-1 mt-4 space-y-1">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
-                        {proj.features.slice(0, 4).map((feat) => (
-                          <FeatureBadge key={feat} text={feat} />
-                        ))}
-                      </div>
                     </div>
                   </div>
                 </div>
