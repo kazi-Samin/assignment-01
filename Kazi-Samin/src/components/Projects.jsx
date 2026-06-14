@@ -310,6 +310,15 @@ export default function Projects() {
                         </span>
                       ))}
                     </div>
+
+                    {/* Features Detail Grid (4 Points) */}
+                    <div className="border-l-2 border-[var(--color-outline-variant)]/30 pl-4 py-1 mt-4 space-y-1">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
+                        {proj.features.slice(0, 4).map((feat) => (
+                          <FeatureBadge key={feat} text={feat} />
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
 
