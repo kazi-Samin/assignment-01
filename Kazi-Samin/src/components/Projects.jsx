@@ -35,11 +35,10 @@ const projects = [
       "DigiTools Platform is a responsive web application designed to help users explore and manage digital tools in a clean and organized interface with smooth browsing experiences and interactive product management features.",
     tags: ["React.js", "React Router", "Tailwind CSS", "DaisyUI", "JavaScript ES6+", "React Toastify", "Vite"],
     features: [
-      "Interactive Cart System",
-      "Add & Remove Products",
+      "Interactive Cart & Add/Remove System",
       "Duplicate Prevention Logic",
-      "Toast Notifications",
-      "Responsive Layout",
+      "Dynamic Toast Notification Alerts",
+      "Fully Responsive Grid Layout",
     ],
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuClpsBvYqtR0A5wduvH-2BKfxW9HidvMUH03DSNlcIWA35KngewFXEmI3L2NuzlObvGOjg5R-go7jrWeG_Rtr1DX6aM290qUEQDpH86UWA_w-aecvTZl4NVVXrjZruYRA5H7FnkiO4hbaWgOBj9NS7VPizrq8gQxhPJ-mMTo-heXUZb7xlqd4vx7zDmV9fap_0J1lKifgfSe8GcW-WHsEbxO9meRBKYvLD4WtU4BDR7EsnicNKO9OCh7QJzqO1rxGDdh5gyKceIfVQ",
@@ -54,13 +53,12 @@ const projects = [
     category: "Modern E-Learning Platform",
     description:
       "SkillSphere is a modern e-learning platform designed for students and aspiring developers to explore premium courses, manage profiles, and follow structured learning paths through a futuristic and responsive user interface.",
-    tags: ["Next.js", "MongoDB", "Node.js", "React.js", "Tailwind CSS", "Better Auth", "Express.js"],
+    tags: ["Next.js", "MongoDB", "Node.js", "Better Auth", "DaisyUI", "React.js", "Tailwind CSS", "Express.js"],
     features: [
-      "Secure Authentication",
-      "Trending Courses Section",
-      "Dynamic Course Pages",
-      "Search Functionality",
-      "Student Profile Dashboard",
+      "Secure Authentication & Credentials Portal",
+      "Trending Course Library & Search",
+      "Dynamic Paths & Subject Guides",
+      "Student Management Profile Dashboard",
     ],
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuA6CWTHO6UDN-6osyROzvg-6TV7Pt1ZBwTrtAPnDNyoTC-NIFJF9y-3blb1WbH_iDLSIieipP2plWBdoFjHyCZVOd0VFXRaUSmshV9oEQuQwcut6zWhURwVRTs-xT-g_ELcsTZWAGCxk2hsSjkzxbK8K-29RSw9Lp1SxyQ7mzAsGbsJtsF0LxRYidiFbS_FhQz_GVUX0Vt3iJaBVqmceKtDnSDQPEe5bVItl_QRm42H8t9OMqyTgcG90LaV5VBkHmTTu0U-j0s_qHY",
